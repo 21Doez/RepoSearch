@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>RepoSearch</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link  rel="icon" href="img/favicon.png" type="image/png"/>
+	<!--META-->
+	<meta name="description" content="Herramienta web para encontrar de manera sencilla los repositorios de Github."/>
+	<meta property="og:url" content="https://www.doezlabs.com.ve/RepoSearch"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="RepoSearch"/>
+	<meta property="og:description" content="Herramienta web para encontrar de manera sencilla los repositorios de Github."/>
+	<meta property="og:image" content="https://www.doezlabs.com.ve/RepoSearch/img/logo.png"/>
+	<script src="https://kit.fontawesome.com/8cff8c3d8c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header class="header">
+		<div class="izq">
+		<a href="#inicio"><img src="img/superior.png" alt="logo" height="60" width="60" class="logo"></a>
+		<h1 class="titulo">RepoSearch</h1>
+		</div>
+		<nav>
+			<ul class="navegacion">
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#busqueda">Busqueda</a></li>
+				<li><a href="#informacion">Información</a></li>				
+			</ul>
+		</nav>
+	</header>	
+	<div id="particles-js"></div>
+	<section class="inicio" id="inicio">	
+		<img src="img/logo.png" alt="logo" height="200" width="200">
+		<p>Busca de manera sencilla los repositorios en GitHub</p>
+		<i class="fas fa-chevron-down"></i>
+	</section>
+	<article class="info">
+		<img src="img/busqueda.svg" alt="busqueda" height="300" width="500">
+		<p class="review">Encuentra de manera sencilla los repositorios de código alojados en GitHub, </br>
+		agiliza un proceso que puede ser algo complejo para algunos</p>
+	</article>
+	<section class="busqueda" id="busqueda">
+		<h2>Busca los repositorios de GitHub</h2>
+		<form id="form" class="formulario">
+			<label for="user">Usuario de Github:</label>
+			<input type="text" id="user" required>
+			<button type="submit" class="fas fa-search enviar" id="send"></button>
+		</form>
+		<div id="resultados" class="results">
+			<h2 id="owner"></h2>
+			<ul class="elements" id="elements">
+			</ul>
+		</div>
+	</section>
+
+	<section class="informacion" id="informacion">
+		<h2>Información sobre este proyecto</h2></br>
+		<p>Este proyecto es una muestra del consumo de servicios de GitHub para mostrar los repositorios respectivos de algun usuario de la plataforma.</p></br>
+		<h2>Información de contacto</h2></br>
+		<p>Pueden contactarme a través de mi facebook y ver mis proyectos en Github</p>
+		<div class="contact">
+			<ul class="iconos">
+				<li><a href="https://www.facebook.com/21doez" target="_blank" class="links"><i class="fa fa-facebook facebook"></i>Facebook</a></li>
+				<li><a href="https://www.github.com/21Doez" target="_blank" class="links"><i class="fa fa-github github"></i>Github</a></li>
+			</ul>
+		</div>
+	</section>
+	<footer class="pie">
+		<p>Desarrollado por Orlando Sanchez | 2020</p>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+	<script src="js/particles.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
