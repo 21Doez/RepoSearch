@@ -295,3 +295,42 @@ header nav ul li:hover{
 		height: 500px;
 	}
 }
+@media (max-width: 1024px) {	
+	.info p{
+		margin: 100px 0 0 0;
+		float:none;
+	}
+	.informacion{
+		height: 500px;
+	}
+}
+@media (max-width: 600px) {	
+	.logo{
+		margin: 0;
+	}
+	.titulo{
+		display: none;
+	}
+	nav{
+		display: none;
+	}
+	.info img{
+		width: 90%;
+	}
+	label{
+  		display: block;
+  		margin-bottom: 10px;
+	}
+	.formulario{
+ 		width: 100%;
+	}
+	.formulario #user{
+	 	width: 94%;
+	}
+	.info p{
+  		margin: 100px 0 0 0;
+	}	
+	.informacion{
+		height: 700px;
+	}
+}
